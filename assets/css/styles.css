@@ -16,6 +16,7 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
+/* Variables end */
 
 html {
   scroll-behavior: smooth;
@@ -47,6 +48,12 @@ body {
   font-family: var(--font-family);
 }
 
+section {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* CSS Resets end */
 
 /* Navbar */
 nav {
@@ -70,7 +77,6 @@ nav a {
   color: var(--primary-color);
   transition: var(--transition);
 }
-
 nav a:hover {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
@@ -85,7 +91,7 @@ nav ul li {
   font-weight: var(--bold-font);
 }
 
-.burguer-menu {
+.burger-menu {
   color: var(--primary-color);
   font-size: 2rem;
   border: 0;
@@ -93,8 +99,9 @@ nav ul li {
   cursor: pointer;
   display: none;
 }
+/* Navbar ends */
 
-/* Hero Section */
+/* Hero section */
 .hero {
   display: flex;
   align-items: center;
@@ -105,7 +112,7 @@ nav ul li {
 }
 
 .hero img {
-  height: 37.5rem; /* 37.5/600 que é o tamanho da img dá 16px - font size padrão */
+  height: 37.5rem;
   width: 37.5rem;
 }
 
@@ -124,8 +131,9 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.3rem 0;
 }
+/* Hero section ends */
 
-/* More About Me Section */
+/* More about */
 .more-about {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
@@ -133,15 +141,15 @@ nav ul li {
 
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
-  text-align: center;
 }
 
 .more-about p {
   line-height: var(--line-height);
   padding: 0.4rem;
 }
+/* More about ends */
 
-/* Skills */
+/* Skills section */
 .skills {
   max-width: 68.75rem;
   margin: auto;
@@ -161,25 +169,13 @@ nav ul li {
   width: 11.875rem;
   height: 11.25rem;
 }
+/* Skills section ends */
 
-.icon-card {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
-  padding: 20px;
-  margin: 10px;
-}
-
-/* Projects Section */
+/* Projects section */
 .projects {
   background-color: var(--bg-color);
   padding: 32px 0;
   margin-top: 2rem;
-}
-
-.project-pic {
-  width: 65%;
-  height: 60%;
 }
 
 .projects-container {
@@ -211,15 +207,13 @@ nav ul li {
   margin-bottom: var(--bottom-margin);
 }
 
-.project-card {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
-  margin: 10px;
+.project-pic {
+  width: 65%;
+  height: 60%;
 }
+/* Projects section ends */
 
-/* Contact Section */
+/* Contacts section */
 .contact {
   margin-top: 2rem;
 }
@@ -238,7 +232,7 @@ nav ul li {
 }
 
 .contact-form-container label {
-  line-height: 2.7rem;
+  line-height: 2.7em;
   font-weight: var(--bold-font);
   color: var(--primary-color);
 }
@@ -280,10 +274,10 @@ nav ul li {
   background-color: var(--primary-color);
   border: 2px solid var(--primary-color);
   cursor: pointer;
-  color: #fff;
 }
+/* Contacts section ends */
 
-/* Social Section */
+/* Social buttons */
 .socials {
   display: flex;
   flex-direction: column;
@@ -296,17 +290,9 @@ nav ul li {
   width: 2rem;
   height: 2rem;
 }
+/* Social button ends */
 
-/* Footer */
-
-footer {
-  background-color: var(--bg-color);
-  padding: 1.25rem;
-  text-align: center;
-  margin: 2rem 0 0;
-}
-
-/* Arrow Section */
+/* Scroll to top button */
 .scroll-up {
   position: fixed;
   right: 0.5%;
@@ -317,4 +303,126 @@ footer {
 .up-arrow {
   width: 3rem;
   height: 3rem;
+}
+/* Scroll to top button ends */
+
+/* Footer section */
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+/* Footer section ends */
+
+/* General (utilities) */
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 720px) {
+  nav {
+    padding: 1.5rem 1rem;
+  }
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+  nav ul li {
+    margin: 8px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .hero {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .bio {
+    margin-top: -7rem;
+    width: 20.5rem;
+  }
+
+  .hero img {
+    height: 37.5rem;
+    width: 30rem;
+  }
+
+  .more-about {
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+  }
+
+  .more-about h2 {
+    text-align: center;
+  }
+
+  .more-about p {
+    text-align: justify;
+  }
+
+  .icon {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    width: 20.875rem;
+  }
+
+  .contact-form-container {
+    max-width: 23.75rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero img {
+    height: 37.5rem;
+    width: 23rem;
+  }
+
+  .bio {
+    width: 18.3rem;
+  }
+
+  .project-container {
+    width: 17.875rem;
+  }
+
+  .contact-form-container {
+    max-width: 17.75rem;
+  }
 }
