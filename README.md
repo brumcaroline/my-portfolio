@@ -1,4 +1,4 @@
-# My Portfolio - [Take Me There!](https://www.linkedin.com/in/carolinefbrum/)
+# My Portfolio - [Take Me There!](https://brumcaroline.github.io/my-portfolio/)
 
 Hello! This is my Portfolio Template, made using HTML, CSS and JavaScript. This portfolio is fully responsive for mobile devices, such as cellphones or tablets. 
 
