@@ -32,213 +32,227 @@
   <body>
     <!-- Navbar -->
     <nav>
-      <h1>Caroline Brum</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
-      </button>
+      <div class="container page-header">
+        <h1>Caroline Brum</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+          <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+        </button>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="about">
-      <img
-      src="assets/icons/avatar.svg"
-      alt="jane-doe"
-      loading="lazy"
-      class="hero-img"
-      />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-          Hello, stranger! My name is Caroline Brum, I'm a Brazilian web developer who's is moving to Amsterdam. I'm currently studying HTML, CSS, Ruby and JavaScript.
-          I discovered a new love for coding when I did a coding bootcamp and now I am looking forward to my first opportunity as a developer. 🌟
-        </p>
-      </div>
-    </section>
+    <div class="section-wrapper">
+      <section class="container hero" id="about">
+        <img
+        src="assets/icons/avatar.svg"
+        alt="jane-doe"
+        loading="lazy"
+        class="hero-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            Hello, stranger! My name is Caroline Brum, I'm a Brazilian web developer who's is moving to Amsterdam. I'm currently studying HTML, CSS, Ruby and JavaScript.
+            I discovered a new love for coding when I did a coding bootcamp and now I am looking forward to my first opportunity as a developer. 🌟
+          </p>
+        </div>
+      </section>
+    </div>
 
     <!-- More about -->
-    <section class="more-about">
-      <h2>A Little More</h2>
-      <p>
-        The current main tools used by me are HTML, CSS, Rails, JavaScript, Git and Figma.
-      </p>
-      <p>
-        I'm also interested in learning more about TypeScript, Vue.js and React.
-      </p>
-      <p>
-        My hobbies include take walks with my dog, running, cooking, watching tv shows and spend quality time with friends and family!
-      </p>
-    </section>
+    <div class="section-wrapper">
+      <section class="container text more-about">
+        <h2>A Little More</h2>
+        <p>
+          The current main tools used by me are HTML, CSS, Rails, JavaScript, Git and Figma.
+        </p>
+        <p>
+          I'm also interested in learning more about TypeScript, Vue.js and React.
+        </p>
+        <p>
+          My hobbies include take walks with my dog, running, cooking, watching tv shows and spend quality time with friends and family!
+        </p>
+      </section>
+    </div>
 
     <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
+    <div class="section-wrapper">
+      <section class="container skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
 
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-html-5.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-css3.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              src="assets/icons/icons8-html-5.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-css3.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-javascript.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
 
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-bootstrap.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-ruby.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
+          <div class="second-set animate__animated animate__pulse">
+            <img
+              src="assets/icons/icons8-bootstrap.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-ruby.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="assets/icons/icons8-git.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/locals.png"
-            alt="locals-only"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Locals Only</h3>
-          <p class="project-details">
-            A social network for travelers and locals. Final project of Le Wagon Bootcamp (Batch #944).
-          </p>
-          <a href="https://locals-only-pedrobradu.herokuapp.com/" target="_blank" class="project-link">Check it Out</a>
+    <div class="section-wrapper">
+      <section class="container projects" id="projects">
+        <h2 class="projects-title">Recent Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="assets/images/locals.png"
+              alt="locals-only"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Locals Only</h3>
+            <p class="project-details">
+              A social network for travelers and locals. Final project of Le Wagon Bootcamp (Batch #944).
+            </p>
+            <a href="https://locals-only-pedrobradu.herokuapp.com/" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/mario.png"
+              alt="netflic-clone"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Mario Jump!</h3>
+            <p class="project-details">
+              For this project game I used HTML, CSS, and Vanilla JavaScript to create a simple game.
+            </p>
+            <a href="https://brumcaroline.github.io/mario-jump/" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="assets/images/red.png"
+              alt="greeny-earth"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Red Lights</h3>
+            <p class="project-details">
+              A prototype of a marketplace. For this project I used RoR, HTML, SASS, JavaScript and Cloudinary.
+            </p>
+            <a href="https://red-lights-pedrobradu.herokuapp.com/" target="_blank" class="project-link">Check it Out</a>
+          </div>
         </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/mario.png"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Mario Jump!</h3>
-          <p class="project-details">
-            For this project game I used HTML, CSS, and Vanilla JavaScript to create a simple game.
-          </p>
-          <a href="https://brumcaroline.github.io/mario-jump/" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/red.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Red Lights</h3>
-          <p class="project-details">
-            A prototype of a marketplace. For this project I used RoR, HTML, SASS, JavaScript and Cloudinary.
-          </p>
-          <a href="https://red-lights-pedrobradu.herokuapp.com/" target="_blank" class="project-link">Check it Out</a>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Contact section -->
-    <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/mvoyqrpy" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
+    <div class="section-wrapper">
+      <section class="container contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/mvoyqrpy" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
               <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
               />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-      <a href="https://www.instagram.com/brumcaroline/" target="_blank"
-        ><img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          class="socicon"
-      /></a>
-      <a href="https://www.linkedin.com/in/carolinefbrum/?locale=en_US" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          class="socicon"
-      /></a>
-      <a href="https://github.com/brumcaroline/" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
+    <div class="section-wrapper">
+      <div class="socials">
+        <a href="https://www.instagram.com/brumcaroline/" target="_blank"
+          ><img
+            src="assets/icons/icons8-instagram.gif"
+            alt="Instagram"
+            class="socicon"
+        /></a>
+        <a href="https://www.linkedin.com/in/carolinefbrum/?locale=en_US" target="_blank"
+          ><img
+            src="assets/icons/icons8-linkedin-circled.gif"
+            alt="Linkedin"
+            class="socicon"
+        /></a>
+        <a href="https://github.com/brumcaroline/" target="_blank"
+          ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+        /></a>
+      </div>
     </div>
 
     <!-- Scroll to top -->
